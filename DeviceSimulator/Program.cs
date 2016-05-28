@@ -9,9 +9,9 @@ namespace DeviceSimulator
     class Program
     {
         static DeviceClient _deviceClient;
-        private const string IotHubUri = "pipelinemanager.azure-devices.net";
-        private const string DeviceKey = "Kbij9r9Y15eb1p+qVoXKqMBwsFgzAfNlPxRuNSvyDGE=";
-        private const string DeviceId = "RBPipelineMonitor";
+        private const string IotHubUri = "yourioturi.azure-devices.net";
+        private const string DeviceKey = "yourdevicekey";
+        private const string DeviceId = "yourdeviceid";
         private static int _sum;
 
         static void Main()

@@ -9,7 +9,7 @@ namespace EventWriterTester
     {
 
         static string eventHubName = "EHPipelineManager";
-        static string connectionString = "Endpoint=sb://pipelinemanager.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=8go7elKkrXrH70EhhiERTumXYPGe8sw97d2FRNtYaSs=";
+        static string connectionString = "Endpoint=sb://pip...";
 
         static void Main(string[] args)
         {

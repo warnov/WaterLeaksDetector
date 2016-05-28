@@ -9,10 +9,10 @@ namespace NotificationsGathererConsole
     {
         static void Main(string[] args)
         {
-            string eventHubConnectionString ="Endpoint=sb://ehpipelinemanage-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=K6rb90Q1O9cXH+HCitVx1atTD5YlALs7ka6VW3KIta0=";
+            string eventHubConnectionString ="Endpoint=sb://ehp...";
             string eventHubName = "EHPipelineManager";
-            string storageAccountName = "sawarkathon";
-            string storageAccountKey = "Cn1PoHKO2i/Zejk7SvyPyQzi3pHaOU+blb39VLiWc+u3NwPzj+fQEKXFb+vVC454hn9J1t2iVjR8S8WDsMrQA==";
+            string storageAccountName = "storageaccountname";
+            string storageAccountKey = "storageacountkey";
             string storageConnectionString = string.Format("DefaultEndpointsProtocol=https;AccountName={0};AccountKey={1}", storageAccountName, storageAccountKey);
 
             string eventProcessorHostName = Guid.NewGuid().ToString();
@@ -39,7 +39,7 @@ namespace NotificationsGathererConsole
         private static async void SendNotificationAsync()
         {
             NotificationHubClient hub = NotificationHubClient
-                .CreateClientFromConnectionString("Endpoint=sb://pipelinemanager.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=zBuV2y8UnbVDbdLQ+cZBgzcJKvrG34Pd3ek+QP6k/ss=", "NHPipelineManager");
+                .CreateClientFromConnectionString("Endpoint=sb://pipeli...", "NHPipelineManager");
             string toast = "<?xml version=\"1.0\" encoding=\"utf-8\"?>" +
                 "<wp:Notification xmlns:wp=\"WPNotification\">" +
                    "<wp:Toast>" +

@@ -18,9 +18,9 @@ namespace FlowMeassureMonitor
         private Timer periodicTimer;
 
         static DeviceClient deviceClient;
-        static string iotHubUri = "pipelinemanager.azure-devices.net";
-        static string deviceKey = "Kbij9r9Y15eb1p+qVoXKqMBwsFgzAfNlPxRuNSvyDGE=";
-        static string deviceId = "RBPipelineMonitor";
+        static string iotHubUri = "youriothuburi.azure-devices.net";
+        static string deviceKey = "yourdevicekey";
+        static string deviceId = "yourdeviceid";
         public MainPage()
         {
             this.InitializeComponent();
